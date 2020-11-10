@@ -1,46 +1,44 @@
 # Secret Family Recipes ENDPOINTS
 
-Reagan Barrington
-
-Elysia Gabe
+**Deployed URL** https://lambda-secret-family-recipes-1.herokuapp.com/
 
 ## Register
 
-Use the path [/register](https://secret-fam-recipes.herokuapp.com/api/register) for the log in.
+Use the path [/register](https://lambda-secret-family-recipes-1.herokuapp.com/api/register) for the log in.
 
 The request should include a username and password, and the result will be a created user.
 
 ```bash
-POST https://secret-fam-recipes.herokuapp.com/api/register
+POST https://lambda-secret-family-recipes-1.herokuapp.com/api/register
 ```
 
 ## Log In
 
-Use the path [/login](https://secret-fam-recipes.herokuapp.com/api/login) for the log in.
+Use the path [/login](https://lambda-secret-family-recipes-1.herokuapp.com/api/login) for the log in.
 
 The request should include a username and password, and the result will be a token.
 
 ```bash
-POST https://secret-fam-recipes.herokuapp.com/api/login
+POST https://lambda-secret-family-recipes-1.herokuapp.com/api/login
 ```
 
 ## RECIPE ENDPOINTS
 
 ### GET: retrieve list of all recipes of authenticated user
 ```bash
-https://secret-fam-recipes.herokuapp.com/api/recipes
+https://lambda-secret-family-recipes-1.herokuapp.com/api/recipes
 ```
 **Notes:** User needs token to access. User id is automatically grabbed from the authorization token.
 ***
 ### GET: retrieve specific recipes of authenticated user 
 ```bash
-https://secret-fam-recipes.herokuapp.com/api/recipes/:id
+https://lambda-secret-family-recipes-1.herokuapp.com/api/recipes/:id
 ```
 **Notes:** Path variable id represents recipe id. 
 ***
 ### POST: add new recipe
 ```bash
-https://secret-fam-recipes.herokuapp.com/api/recipes
+https://lambda-secret-family-recipes-1.herokuapp.com/api/recipes
 ```
 **Notes:** <br>
 { <br>
@@ -66,7 +64,7 @@ category id => category name<br>
 
 ### PUT: update existing recipe
 ```bash
-https://secret-fam-recipes.herokuapp.com/api/recipes/:id
+https://lambda-secret-family-recipes-1.herokuapp.com/api/recipes/:id
 ```
 **Notes:** Path variable id represents recipe id. <br>
 { <br>
@@ -84,6 +82,6 @@ https://secret-fam-recipes.herokuapp.com/api/recipes/:id
 
 ### DELETE: delete existing recipe
 ```bash
-https://secret-fam-recipes.herokuapp.com/api/recipes/:id
+https://lambda-secret-family-recipes-1.herokuapp.com/api/recipes/:id
 ```
 **Notes:** Path variable id represents recipe id. <br>
